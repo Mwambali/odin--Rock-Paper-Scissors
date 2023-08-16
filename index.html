@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">HERE TO ENJOY LIFE ???</h1>
+        <p>It's Game Time</p>
+    </header>
+    <main class="main">
+        <div class="scoreboard">
+            <h2 class="score-info" id="scoreInfo">Choose Well Your Hand</h2>
+            <h3 class="score-message" id="scoreMessage">Get "5" points to be winner</h3>
+            <div class="scores-container">
+                <div class="score-box">
+                    <p class="score" id="playerScore">Me: 0</p>
+                    <div class="sign" id="playerSign"><i class="fas fa-question-circle"></i></div>
+                </div>
+                <div class="score-box">
+                    <p class="score" id="computerScore">Computer: 0</p>
+                    <div class="sign" id="computerSign"><i class="fas fa-question-circle"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-square" id="rockBtn">
+                <div class="sign"><i class="fas fa-hand-rock"></i></div>
+            </button>
+            <button class="btn btn-square" id="paperBtn">
+                <div class="sign"><i class="fas fa-hand-paper"></i></div>
+            </button>
+            <button class="btn btn-square" id="scissorsBtn">
+                <div class="sign"><i class="fas fa-hand-scissors"></i></div>
+            </button>
+        </div>
+    </main>
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg">Game Over _ You Lost</p>
+        <button class="btn btn-restart" id="restartBtn">Try again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
