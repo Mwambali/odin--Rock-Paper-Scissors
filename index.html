@@ -16,8 +16,21 @@
     </header>
     <main class="main">
         <div class="scoreboard">
-            <h2 class="score-info" id="scoreInfo">Choose Well Your Hand</h2>
+            <h2 class="score-info" id="scoreInfo">ROCK PAPER SCISSORS</h2>
             <h3 class="score-message" id="scoreMessage">Get "5" points to be winner</h3>
+
+            <div class="buttons">
+                <button class="btn btn-square" id="rockBtn">
+                        <div class="signs"><i class="fas fa-hand-rock"></i></div>
+                </button>
+                <button class="btn btn-square" id="paperBtn">
+                        <div class="signs"><i class="fas fa-hand-paper"></i></div>
+                </button>
+                <button class="btn btn-square" id="scissorsBtn">
+                        <div class="signs"><i class="fas fa-hand-scissors"></i></div>
+                </button>
+            </div>
+
             <div class="scores-container">
                 <div class="score-box">
                     <p class="score" id="playerScore">Me: 0</p>
@@ -29,17 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="buttons">
-            <button class="btn btn-square" id="rockBtn">
-                <div class="sign"><i class="fas fa-hand-rock"></i></div>
-            </button>
-            <button class="btn btn-square" id="paperBtn">
-                <div class="sign"><i class="fas fa-hand-paper"></i></div>
-            </button>
-            <button class="btn btn-square" id="scissorsBtn">
-                <div class="sign"><i class="fas fa-hand-scissors"></i></div>
-            </button>
-        </div>
+
     </main>
     <div class="modal" id="endgameModal">
         <p class="modal-title" id="endgameMsg">Game Over _ You Lost</p>
